@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- <listeners>
+<listener class-name="com.obsqura.ServiceApp.Listerners"/>
+</listeners> -->
+<parameter name="browser" value="chrome"/>
+<parameter name="userName" value="admin@admin.com"/>
+<parameter name="userName" value="admin@admin.com"/>
+<parameter name="mailid" value="ravisankar_gatgmailcom"/>
+<parameter name="subject" value="Mobile Screenshot"/>
+<parameter name="message" value="Screenshot HD capture and quality"/>
+<test name="Test" parallel="classes" thread-count="2">
+ 	<classes>
+ 	  <class name="com.obsqura.ServiceApp.ReparationWindowPageTest"/>
+ 	  <class name="com.obsqura.ServiceApp.DropdownUserMenuTest"/>
+      <class name="com.obsqura.ServiceApp.HomePageTest"/>
+      <class name="com.obsqura.ServiceApp.LoginPageTest"/> 
+      <class name="com.obsqura.ServiceApp.InventoryPageInfoTest"/>
+      <class name="com.obsqura.ServiceApp.ClientWindowPageTest"/>
+      <class name="com.obsqura.ServiceApp.NotificationPageTest"/>
+      <class name="com.obsqura.ServiceApp.SendEmailWindowPageTest"/>
+      <class name="com.obsqura.ServiceApp.SendSMSWindowPageTest"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

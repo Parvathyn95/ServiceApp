@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="subject" value="Mobile Screenshot"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="mailid" value="ravisankar_gatgmailcom"/>
+  <parameter name="userName" value="admin@admin.com"/>
+  <parameter name="message" value="Screenshot HD capture and quality"/>
+  <listeners>
+    <listener class-name="com.obsqura.ServiceApp.Listeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.obsqura.ServiceApp.SendEmailWindowPageTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="initBrowser"/>
+          <include name="verifySelectNameEnterMessageAndSend"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- com.obsqura.ServiceApp.SendEmailWindowPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
