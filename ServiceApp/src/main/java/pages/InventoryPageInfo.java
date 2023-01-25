@@ -23,7 +23,7 @@ public class InventoryPageInfo {
 	@FindBy(xpath="(//a[@class='small-box-footer'])[3]")
 	private WebElement inventoryPdtsMoreInfoButton;
 	
-	@FindBy(xpath="(//button[@data-toggle='dropdown'])[1]")
+	@FindBy(xpath="//table[@id='PRData']//tbody//tr[1]//td[9]//button")
 	private WebElement actionDropdownButton;
 	
 	@FindBy(xpath="//i[@class='fa fa-print']")
@@ -41,7 +41,7 @@ public class InventoryPageInfo {
 	@FindBy(xpath="//button[@id='reset']")
 	private WebElement resetButton;
 	
-	@FindBy(xpath="//table[@id='PRData']//tbody//child::tr[2]")
+	@FindBy(xpath="//table[@id='PRData']//tbody//child::tr")
 	private WebElement particularRowElement;
 	
 	@FindBy(xpath="//a[@data-original-title='Print Barcode/Label']")
@@ -52,6 +52,8 @@ public class InventoryPageInfo {
 	
 	@FindBy(xpath="//a[@data-original-title='<b>Delete Product</b>']")
 	private WebElement deleteProductButton;
+	
+	By headerElement = By.xpath("//table[@id='dynamic-table']//child::th");
 
 	public void clickOnInventoryPdtMoreInfoAndFetchUrl() throws IOException {
 		String actualUrl,expectedUrl;
@@ -68,7 +70,7 @@ public class InventoryPageInfo {
 		PageUtility.clickOnElement(actionDropdownButton);
 		PageUtility.clickOnElement(printBarcodeOrLabelOption);
 		expectedHeader=ExcelUtility.getValuesFromExcel(1,1,constants.Constants.TESTDATAFILE,"InventoryProductsMoreInfo");
-		List  <WebElement> tableHeader= table.findElements(By.xpath("//table[@id='dynamic-table']//child::th"));
+		List  <WebElement> tableHeader= table.findElements(headerElement);
 		for(WebElement header : tableHeader) {
 			if(header.getText().equals(expectedHeader)) {
 				actualHeader = header.getText();

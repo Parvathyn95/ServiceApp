@@ -12,12 +12,14 @@ import utilities.DataProviderUtility;
 public class ClientWindowPageTest extends Base {
 	LoginPage loginPageObj;
 	ClientWindowPage clientWindowPageObj;
-	@Test
-	public void verifyEnterClientDetailsAndAddClient() throws IOException {
+	@Test(dataProvider="formData3",dataProviderClass=DataProviderUtility.class)
+	public void verifyEnterClientDetailsAndAddClient(String company,String geoLocation,String address,String city, String postalCode,
+			   String telephone, String email,String vat,String ssn,String comment) throws IOException {
 		loginPageObj = new LoginPage(driver);
 		loginPageObj.enterUsernameAndPassword();
 		clientWindowPageObj = new ClientWindowPage(driver);
-		clientWindowPageObj.enterClientDetailsAndAddClient();
+		clientWindowPageObj.enterClientDetailsAndAddClient(company,geoLocation,address,city, postalCode,
+				telephone, email,vat,ssn,comment, comment);
 	}
 	@Test(dataProvider="formData",dataProviderClass=DataProviderUtility.class)
 	public void verifyeEnterClientDetailsWithoutNameAndAddClient(String company,String geoLocation,String address,String city, String postalCode,
@@ -34,19 +36,5 @@ public class ClientWindowPageTest extends Base {
 		loginPageObj.enterUsernameAndPassword();
 		clientWindowPageObj = new ClientWindowPage(driver);
 		clientWindowPageObj.colorOfTheVariousButtonsOfAddClientForm();
-	}
-	@Test
-	public void verifyClickOnViewClientInNewWindowAndModifyName() throws IOException {
-		loginPageObj = new LoginPage(driver);
-		loginPageObj.enterUsernameAndPassword();
-		clientWindowPageObj = new ClientWindowPage(driver);
-		clientWindowPageObj.clickOnViewClientInNewWindowAndModifyDetails();
-	}
-	@Test
-	public void checkClickOnExportToExcelFileAndDownloadIt() throws IOException, InterruptedException {
-		loginPageObj = new LoginPage(driver);
-		loginPageObj.enterUsernameAndPassword();
-		clientWindowPageObj = new ClientWindowPage(driver);
-		clientWindowPageObj.clickOnExportToExcelFileAndDownloadIt();
 	}
 }

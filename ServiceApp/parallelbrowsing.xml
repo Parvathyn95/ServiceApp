@@ -10,7 +10,7 @@
 <parameter name="mailid" value="ravisankar_gatgmailcom"/>
 <parameter name="subject" value="Mobile Screenshot"/>
 <parameter name="message" value="Screenshot HD capture and quality"/>
-<test name="Test" parallel="classes" thread-count="2">
+<test name="Test" parallel="classes" thread-count="9">
  	<classes>
  	  <class name="com.obsqura.ServiceApp.ReparationWindowPageTest"/>
  	  <class name="com.obsqura.ServiceApp.DropdownUserMenuTest"/>

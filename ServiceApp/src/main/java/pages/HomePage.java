@@ -11,6 +11,7 @@ import org.testng.Assert;
 import utilities.ExcelUtility;
 import utilities.PageUtility;
 import utilities.ParameterUtility;
+import utilities.WaitUtility;
 
 public class HomePage {
 	public WebDriver driver;
@@ -28,19 +29,19 @@ public class HomePage {
 	@FindBy(xpath="//div[@class='small-box bg-yellow']")
 	private WebElement inventoryPdtContainerBox;
 	
-	@FindBy(xpath="//td[@data-date='2023-01-26']//child::span")
+	@FindBy(xpath="//div[@class='fc-bg']//td[@data-date='2023-01-26']")
 	private WebElement specificDate;
 	
 	@FindBy(xpath="(//h4[@class='modal-title'])[9]")
 	private WebElement newWindowTitle;	
 	
-	@FindBy(xpath="//input[@class='bootbox-input bootbox-input-text form-control']")
+	@FindBy(xpath="//div[@class='modal-content']//child::input[@class='bootbox-input bootbox-input-text form-control']")
 	private WebElement newWindowTextField;	
 	
 	@FindBy(xpath="//button[@data-bb-handler='confirm']")
 	private WebElement okButton;	
 	
-	@FindBy(xpath="//div[@class='toast-message']")
+	@FindBy(xpath="//div[@class='toast-container']//following::div[@class='toast-message']")
 	private WebElement toastMessageField;	
 	
 	@FindBy(xpath="//div[@class='fc-content']//child::span[text()='Mobile Rebooting']")
@@ -83,8 +84,8 @@ public class HomePage {
 	public void clickOnDateCalenderAddEventIfAddedOrNot() throws IOException {
 		String actualToastMessage,expectedToastMessage;
 		Assert.assertFalse(specificDate.isSelected(), "Specific date in date calendar is already selected out of scope");
-		PageUtility.clickOnElement(specificDate);
-		PageUtility.enterText(newWindowTextField, "Mobile Rebooting");
+		PageUtility.clickOnElement(specificDate, driver);
+		PageUtility.enterText(newWindowTextField,"Mobile Rebooting");
 		PageUtility.clickOnElement(okButton);
 		actualToastMessage=toastMessageField.getText();
 		expectedToastMessage=ExcelUtility.getValuesFromExcel(1,4,constants.Constants.TESTDATAFILE,"HomePage");
@@ -96,6 +97,7 @@ public class HomePage {
 		Assert.assertFalse(mobileRebootingEvent.isSelected(), "Mobile Rebooting Entry is already selected out of scope");
 		PageUtility.clickOnElement(mobileRebootingEvent);
 		PageUtility.clickOnElement(removeEventYesButton);
+		WaitUtility.waitForVisibilityOfWebelement(driver, toastMessageField);
 		actualToastMessage=toastMessageField.getText();
 		expectedToastMessage=ExcelUtility.getValuesFromExcel(1,5,constants.Constants.TESTDATAFILE,"HomePage");
 		Assert.assertEquals(expectedToastMessage, actualToastMessage,"Expected and actual toast messages are not equal");

@@ -9,7 +9,7 @@ import pages.LoginPage;
 
 public class LoginPageTest extends Base {
 	LoginPage loginPageObj;
-	@Test
+	@Test 
 	public void verifyEnterUsernameAndPassword() throws IOException {
 		LoginPage loginPageObj = new LoginPage(driver);
 		loginPageObj.enterUsernameAndPassword();

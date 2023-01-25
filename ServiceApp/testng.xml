@@ -9,9 +9,24 @@
 <parameter name="mailid" value="ravisankar_gatgmailcom"/>
 <parameter name="subject" value="Mobile Screenshot"/>
 <parameter name="message" value="Screenshot HD capture and quality"/>
+<parameter name="imei" value="7YE5TR"/>
+<parameter name="category" value="Screen Scratch"/>
+<parameter name="addItem" value="Mobilecase"/>
+<parameter name="defect" value="Screen break"/>
+<parameter name="warrantyCardNumber" value="B6R4W32P0"/>
+<parameter name="comment" value="Cannot be fixed without adhesive tape"/>
 <test name="Test">
  	<classes>
-      <class name="com.obsqura.ServiceApp.SendEmailWindowPageTest"/>  	
+      <class name="com.obsqura.ServiceApp.NotificationPageTest"/> 
+      <class name="com.obsqura.ServiceApp.ClientMoreInfoPageTest"/>
+ 	  <class name="com.obsqura.ServiceApp.DropdownUserMenuTest"/>
+      <class name="com.obsqura.ServiceApp.HomePageTest"/>
+      <class name="com.obsqura.ServiceApp.LoginPageTest"/> 
+      <class name="com.obsqura.ServiceApp.InventoryPageInfoTest"/>
+      <class name="com.obsqura.ServiceApp.ClientWindowPageTest"/>
+      <class name="com.obsqura.ServiceApp.SendEmailWindowPageTest"/>
+      <class name="com.obsqura.ServiceApp.SendSMSWindowPageTest"/>  	
+      <class name="com.obsqura.ServiceApp.ReparationWindowPageTest"/> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

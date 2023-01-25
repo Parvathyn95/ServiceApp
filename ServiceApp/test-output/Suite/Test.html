@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 18 21:49:18 GST 2023</td>
+<td>Started on:</td><td>Tue Jan 24 20:33:17 GST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27693 ms)</td>
+<tr><td>Total time:</td><td>463 seconds (463934 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.obsqura.ServiceApp.SendEmailWindowPageTest.verifySelectNameEnterMessageAndSend()'><b>verifySelectNameEnterMessageAndSend</b><br>Test class: com.obsqura.ServiceApp.SendEmailWindowPageTest</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+<td title='com.obsqura.ServiceApp.InventoryPageInfoTest.checkAndClickOnInventoryPdtTableElementAndInspectButtonColors()'><b>checkAndClickOnInventoryPdtTableElementAndInspectButtonColors</b><br>Test class: com.obsqura.ServiceApp.InventoryPageInfoTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b06a55b92c59cb0400caaf36d8281918, clickElement {id=3f28ca72-b46a-4261-a4c6-20f4b722ed49}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58535/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b06a55b92c59cb0400caaf36d8281918)] -&gt; xpath: //input[@name=&apos;subject&apos;]]
-Session ID: b06a55b92c59cb0400caaf36d8281918
+Command: [555451d8d0a5ecd96f35a91640485270, clickElement {id=b31fa694-847b-4e20-aab1-d36136de85a9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64140/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (555451d8d0a5ecd96f35a91640485270)] -&gt; xpath: //table[@id=&apos;PRData&apos;]//tbody//child::tr]
+Session ID: 555451d8d0a5ecd96f35a91640485270
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -97,18 +98,19 @@ Session ID: b06a55b92c59cb0400caaf36d8281918
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy20.click(Unknown Source)
 	at utilities.PageUtility.clickOnElement(PageUtility.java:12)
-	at pages.SendEmailWindowPage.selectMultipleNamesSubjectNoMessageAndSend(SendEmailWindowPage.java:72)
-	at com.obsqura.ServiceApp.SendEmailWindowPageTest.verifySelectNameEnterMessageAndSend(SendEmailWindowPageTest.java:15)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace140110402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace140110402'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+	at pages.InventoryPageInfo.clickOnInventoryPdtTableElementAndInspectButtonColors(InventoryPageInfo.java:86)
+	at com.obsqura.ServiceApp.InventoryPageInfoTest.checkAndClickOnInventoryPdtTableElementAndInspectButtonColors(InventoryPageInfoTest.java:33)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace262926126", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace262926126'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b06a55b92c59cb0400caaf36d8281918, clickElement {id=3f28ca72-b46a-4261-a4c6-20f4b722ed49}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58535/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b06a55b92c59cb0400caaf36d8281918)] -&gt; xpath: //input[@name=&apos;subject&apos;]]
-Session ID: b06a55b92c59cb0400caaf36d8281918
+Command: [555451d8d0a5ecd96f35a91640485270, clickElement {id=b31fa694-847b-4e20-aab1-d36136de85a9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64140/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (555451d8d0a5ecd96f35a91640485270)] -&gt; xpath: //table[@id=&apos;PRData&apos;]//tbody//child::tr]
+Session ID: 555451d8d0a5ecd96f35a91640485270
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -122,15 +124,14 @@ Session ID: b06a55b92c59cb0400caaf36d8281918
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy20.click(Unknown Source)
 	at utilities.PageUtility.clickOnElement(PageUtility.java:12)
-	at pages.SendEmailWindowPage.selectMultipleNamesSubjectNoMessageAndSend(SendEmailWindowPage.java:72)
-	at com.obsqura.ServiceApp.SendEmailWindowPageTest.verifySelectNameEnterMessageAndSend(SendEmailWindowPageTest.java:15)
+	at pages.InventoryPageInfo.clickOnInventoryPdtTableElementAndInspectButtonColors(InventoryPageInfo.java:86)
+	at com.obsqura.ServiceApp.InventoryPageInfoTest.checkAndClickOnInventoryPdtTableElementAndInspectButtonColors(InventoryPageInfoTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -157,8 +158,818 @@ Session ID: b06a55b92c59cb0400caaf36d8281918
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>17</td>
-<td>com.obsqura.ServiceApp.SendEmailWindowPageTest@69930714</td></tr>
+<td>5</td>
+<td>com.obsqura.ServiceApp.InventoryPageInfoTest@197d671</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ClientMoreInfoPageTest.checkClickOnExportToExcelFileAndDownloadIt()'><b>checkClickOnExportToExcelFileAndDownloadIt</b><br>Test class: com.obsqura.ServiceApp.ClientMoreInfoPageTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i class=&quot;icon fa fa-tasks tip&quot; data-placement=&quot;left&quot; title=&quot;&quot; data-original-title=&quot;Actions&quot;&gt;&lt;/i&gt; is not clickable at point (1247, 125). Other element would receive the click: &lt;div id=&quot;loadingmessage&quot; class=&quot;loader&quot; style=&quot;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb5c091703dba6a0c8df8541a6753360, clickElement {id=52364513-2550-45f9-8b74-45be06b25e28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62938/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bb5c091703dba6a0c8df8541a6753360)] -&gt; xpath: //a[@data-toggle=&apos;dropdown&apos;]//child::i[@data-original-title=&apos;Actions&apos;]]
+Session ID: bb5c091703dba6a0c8df8541a6753360
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at utilities.PageUtility.clickOnElement(PageUtility.java:12)
+	at pages.ClientMoreInfoPage.clickOnExportToExcelFileAndDownloadIt(ClientMoreInfoPage.java:85)
+	at com.obsqura.ServiceApp.ClientMoreInfoPageTest.checkClickOnExportToExcelFileAndDownloadIt(ClientMoreInfoPageTest.java:25)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace118492650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace118492650'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i class=&quot;icon fa fa-tasks tip&quot; data-placement=&quot;left&quot; title=&quot;&quot; data-original-title=&quot;Actions&quot;&gt;&lt;/i&gt; is not clickable at point (1247, 125). Other element would receive the click: &lt;div id=&quot;loadingmessage&quot; class=&quot;loader&quot; style=&quot;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb5c091703dba6a0c8df8541a6753360, clickElement {id=52364513-2550-45f9-8b74-45be06b25e28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62938/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bb5c091703dba6a0c8df8541a6753360)] -&gt; xpath: //a[@data-toggle=&apos;dropdown&apos;]//child::i[@data-original-title=&apos;Actions&apos;]]
+Session ID: bb5c091703dba6a0c8df8541a6753360
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at utilities.PageUtility.clickOnElement(PageUtility.java:12)
+	at pages.ClientMoreInfoPage.clickOnExportToExcelFileAndDownloadIt(ClientMoreInfoPage.java:85)
+	at com.obsqura.ServiceApp.ClientMoreInfoPageTest.checkClickOnExportToExcelFileAndDownloadIt(ClientMoreInfoPageTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>9</td>
+<td>com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.InventoryPageInfoTest.checkColorOfVariousButtonsInPrintBarcodeOrLabel()'><b>checkColorOfVariousButtonsInPrintBarcodeOrLabel</b><br>Test class: com.obsqura.ServiceApp.InventoryPageInfoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;PRData&apos;]//tbody//tr[1]//td[9]//button&quot;}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75339614303e37b1db5b83f19d741847, findElement {using=xpath, value=//table[@id=&apos;PRData&apos;]//tbody//tr[1]//td[9]//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64271/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75339614303e37b1db5b83f19d741847
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.isSelected(Unknown Source)
+	at pages.InventoryPageInfo.colorOfVariousButtonsInPrintBarcodeOrLabel(InventoryPageInfo.java:100)
+	at com.obsqura.ServiceApp.InventoryPageInfoTest.checkColorOfVariousButtonsInPrintBarcodeOrLabel(InventoryPageInfoTest.java:40)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172379175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172379175'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;PRData&apos;]//tbody//tr[1]//td[9]//button&quot;}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75339614303e37b1db5b83f19d741847, findElement {using=xpath, value=//table[@id=&apos;PRData&apos;]//tbody//tr[1]//td[9]//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64271/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75339614303e37b1db5b83f19d741847
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.isSelected(Unknown Source)
+	at pages.InventoryPageInfo.colorOfVariousButtonsInPrintBarcodeOrLabel(InventoryPageInfo.java:100)
+	at com.obsqura.ServiceApp.InventoryPageInfoTest.checkColorOfVariousButtonsInPrintBarcodeOrLabel(InventoryPageInfoTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>4</td>
+<td>com.obsqura.ServiceApp.InventoryPageInfoTest@197d671</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.HomePageTest.verifyAndClickOnDateCalenderAddEventIfAddedOrNot()'><b>verifyAndClickOnDateCalenderAddEventIfAddedOrNot</b><br>Test class: com.obsqura.ServiceApp.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-content&apos;]//child::input[@class=&apos;bootbox-input bootbox-input-text form-control&apos;]&quot;}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [126511c1f84aeb33f29d476512ef1e8b, findElement {using=xpath, value=//div[@class=&apos;modal-content&apos;]//child::input[@class=&apos;bootbox-input bootbox-input-text form-control&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63211/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 126511c1f84aeb33f29d476512ef1e8b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at utilities.PageUtility.enterText(PageUtility.java:20)
+	at pages.HomePage.clickOnDateCalenderAddEventIfAddedOrNot(HomePage.java:88)
+	at com.obsqura.ServiceApp.HomePageTest.verifyAndClickOnDateCalenderAddEventIfAddedOrNot(HomePageTest.java:27)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1933493643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1933493643'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;modal-content&apos;]//child::input[@class=&apos;bootbox-input bootbox-input-text form-control&apos;]&quot;}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [126511c1f84aeb33f29d476512ef1e8b, findElement {using=xpath, value=//div[@class=&apos;modal-content&apos;]//child::input[@class=&apos;bootbox-input bootbox-input-text form-control&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63211/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 126511c1f84aeb33f29d476512ef1e8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at utilities.PageUtility.enterText(PageUtility.java:20)
+	at pages.HomePage.clickOnDateCalenderAddEventIfAddedOrNot(HomePage.java:88)
+	at com.obsqura.ServiceApp.HomePageTest.verifyAndClickOnDateCalenderAddEventIfAddedOrNot(HomePageTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>3</td>
+<td>com.obsqura.ServiceApp.HomePageTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.HomePageTest.verifyAndClickOnDateCalenderEventAndDeleteIt()'><b>verifyAndClickOnDateCalenderEventAndDeleteIt</b><br>Test class: com.obsqura.ServiceApp.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfeed86fe64d09d74391289108645f0a, clickElement {id=46424f2e-5f03-4a2c-8229-f5dacc9b0b0b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63301}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63301/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfeed86fe64d09d74391289108645f0a)] -&gt; xpath: //button[@data-bb-handler=&apos;confirm&apos;]]
+Session ID: bfeed86fe64d09d74391289108645f0a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at utilities.PageUtility.clickOnElement(PageUtility.java:12)
+	at pages.HomePage.clickOnDateCalenderEventAndDeleteIt(HomePage.java:99)
+	at com.obsqura.ServiceApp.HomePageTest.verifyAndClickOnDateCalenderEventAndDeleteIt(HomePageTest.java:34)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1699826397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1699826397'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bfeed86fe64d09d74391289108645f0a, clickElement {id=46424f2e-5f03-4a2c-8229-f5dacc9b0b0b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63301}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63301/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfeed86fe64d09d74391289108645f0a)] -&gt; xpath: //button[@data-bb-handler=&apos;confirm&apos;]]
+Session ID: bfeed86fe64d09d74391289108645f0a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at utilities.PageUtility.clickOnElement(PageUtility.java:12)
+	at pages.HomePage.clickOnDateCalenderEventAndDeleteIt(HomePage.java:99)
+	at com.obsqura.ServiceApp.HomePageTest.verifyAndClickOnDateCalenderEventAndDeleteIt(HomePageTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>4</td>
+<td>com.obsqura.ServiceApp.HomePageTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.InventoryPageInfoTest.verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription()'><b>verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription</b><br>Test class: com.obsqura.ServiceApp.InventoryPageInfoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;PRData&apos;]//tbody//tr[1]//td[9]//button&quot;}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [321ba11c5b463c251393a04700799ebc, findElement {using=xpath, value=//table[@id=&apos;PRData&apos;]//tbody//tr[1]//td[9]//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64420/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 321ba11c5b463c251393a04700799ebc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.isSelected(Unknown Source)
+	at pages.InventoryPageInfo.clickOnPrintBarcodeOrLabelAndCheckTableHeader(InventoryPageInfo.java:69)
+	at com.obsqura.ServiceApp.InventoryPageInfoTest.verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription(InventoryPageInfoTest.java:26)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace508000580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace508000580'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;PRData&apos;]//tbody//tr[1]//td[9]//button&quot;}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [321ba11c5b463c251393a04700799ebc, findElement {using=xpath, value=//table[@id=&apos;PRData&apos;]//tbody//tr[1]//td[9]//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64420/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 321ba11c5b463c251393a04700799ebc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.isSelected(Unknown Source)
+	at pages.InventoryPageInfo.clickOnPrintBarcodeOrLabelAndCheckTableHeader(InventoryPageInfo.java:69)
+	at com.obsqura.ServiceApp.InventoryPageInfoTest.verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription(InventoryPageInfoTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>5</td>
+<td>com.obsqura.ServiceApp.InventoryPageInfoTest@197d671</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ReparationWindowPageTest.verifyAndEnterMandatoryDetailsAddReparationReportGenerated()'><b>verifyAndEnterMandatoryDetailsAddReparationReportGenerated</b><br>Test class: com.obsqura.ServiceApp.ReparationWindowPageTest<br>Parameters: 2WR6J89, Oppo Reno, Screen break, 14 PLUS PRO, B6R4W32P0, 25</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1b9b85afe388b50effd7be9ffbb5be3, sendKeysToElement {id=bdf331be-90e3-4259-9d32-7c624a387e82, value=[Ljava.lang.CharSequence;@5ff29e8b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65315/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a1b9b85afe388b50effd7be9ffbb5be3)] -&gt; xpath: //input[@id=&apos;imei&apos;]]
+Session ID: a1b9b85afe388b50effd7be9ffbb5be3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at utilities.PageUtility.enterText(PageUtility.java:20)
+	at pages.ReparationWindowPage.enterMandatoryDetailsAddReparationReportGenerated(ReparationWindowPage.java:185)
+	at com.obsqura.ServiceApp.ReparationWindowPageTest.verifyAndEnterMandatoryDetailsAddReparationReportGenerated(ReparationWindowPageTest.java:35)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1643787651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1643787651'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1b9b85afe388b50effd7be9ffbb5be3, sendKeysToElement {id=bdf331be-90e3-4259-9d32-7c624a387e82, value=[Ljava.lang.CharSequence;@5ff29e8b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65315/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a1b9b85afe388b50effd7be9ffbb5be3)] -&gt; xpath: //input[@id=&apos;imei&apos;]]
+Session ID: a1b9b85afe388b50effd7be9ffbb5be3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at utilities.PageUtility.enterText(PageUtility.java:20)
+	at pages.ReparationWindowPage.enterMandatoryDetailsAddReparationReportGenerated(ReparationWindowPage.java:185)
+	at com.obsqura.ServiceApp.ReparationWindowPageTest.verifyAndEnterMandatoryDetailsAddReparationReportGenerated(ReparationWindowPageTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>4</td>
+<td>com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ReparationWindowPageTest.verifyAndEnterSomeReparationDetailseAndAddReparation()'><b>verifyAndEnterSomeReparationDetailseAndAddReparation</b><br>Test class: com.obsqura.ServiceApp.ReparationWindowPageTest<br>Parameters: 7YE5TR, Screen Scratch, Mobilecase, Screen break, B6R4W32P0, Cannot be fixed without adhesive tape</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c9ed7985d60fd12302cf9faae880c97, sendKeysToElement {id=c82581c8-3c68-4865-8772-e32a2dc9754b, value=[Ljava.lang.CharSequence;@46cb800b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49702/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5c9ed7985d60fd12302cf9faae880c97)] -&gt; xpath: //input[@id=&apos;imei&apos;]]
+Session ID: 5c9ed7985d60fd12302cf9faae880c97
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at utilities.PageUtility.enterText(PageUtility.java:20)
+	at pages.ReparationWindowPage.enterSomeReparationDetailsAndAddReparation(ReparationWindowPage.java:147)
+	at com.obsqura.ServiceApp.ReparationWindowPageTest.verifyAndEnterSomeReparationDetailseAndAddReparation(ReparationWindowPageTest.java:21)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace352938766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace352938766'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c9ed7985d60fd12302cf9faae880c97, sendKeysToElement {id=c82581c8-3c68-4865-8772-e32a2dc9754b, value=[Ljava.lang.CharSequence;@46cb800b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49702/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5c9ed7985d60fd12302cf9faae880c97)] -&gt; xpath: //input[@id=&apos;imei&apos;]]
+Session ID: 5c9ed7985d60fd12302cf9faae880c97
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at utilities.PageUtility.enterText(PageUtility.java:20)
+	at pages.ReparationWindowPage.enterSomeReparationDetailsAndAddReparation(ReparationWindowPage.java:147)
+	at com.obsqura.ServiceApp.ReparationWindowPageTest.verifyAndEnterSomeReparationDetailseAndAddReparation(ReparationWindowPageTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>4</td>
+<td>com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ReparationWindowPageTest.verifyClickOnViewReparationInNewWindow()'><b>verifyClickOnViewReparationInNewWindow</b><br>Test class: com.obsqura.ServiceApp.ReparationWindowPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (01c77d6c7f31d0d36c0693f04cad1213)] -&gt; xpath: //a[@href=&apos;#view_reparation&apos;]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49422/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01c77d6c7f31d0d36c0693f04cad1213
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.WaitUtility.waitForVisibilityOfWebelement(WaitUtility.java:131)
+	at pages.ReparationWindowPage.clickOnViewReparationInNewWindow(ReparationWindowPage.java:215)
+	at com.obsqura.ServiceApp.ReparationWindowPageTest.verifyClickOnViewReparationInNewWindow(ReparationWindowPageTest.java:42)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1016654505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1016654505'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (01c77d6c7f31d0d36c0693f04cad1213)] -&gt; xpath: //a[@href=&apos;#view_reparation&apos;]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49422/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01c77d6c7f31d0d36c0693f04cad1213
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.WaitUtility.waitForVisibilityOfWebelement(WaitUtility.java:131)
+	at pages.ReparationWindowPage.clickOnViewReparationInNewWindow(ReparationWindowPage.java:215)
+	at com.obsqura.ServiceApp.ReparationWindowPageTest.verifyClickOnViewReparationInNewWindow(ReparationWindowPageTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>58</td>
+<td>com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ClientWindowPageTest.verifyEnterClientDetailsAndAddClient()'><b>verifyEnterClientDetailsAndAddClient</b><br>Test class: com.obsqura.ServiceApp.ClientWindowPageTest<br>Parameters: Lewbricks Solutions, Mumbai, Mayank Vihar, Dombivilli East, Bombay, Andheri, 047239, 6734209836, nakul89@rediffmail.com, CG87OP54, 56YU98, Samsung yfold phone screen display</td>
+<td><div><pre>java.io.IOException: Cannot run program &quot;C:\\Users\\admin\\Desktop\\ServiceApp\\ScreengRepair.exe&quot;: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at pages.ClientWindowPage.enterClientDetailsAndAddClient(ClientWindowPage.java:142)
+	at com.obsqura.ServiceApp.ClientWindowPageTest.verifyEnterClientDetailsAndAddClient(ClientWindowPageTest.java:21)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.&lt;init&gt;(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 31 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1885959288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1885959288'><pre>java.io.IOException: Cannot run program &quot;C:\\Users\\admin\\Desktop\\ServiceApp\\ScreengRepair.exe&quot;: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at pages.ClientWindowPage.enterClientDetailsAndAddClient(ClientWindowPage.java:142)
+	at com.obsqura.ServiceApp.ClientWindowPageTest.verifyEnterClientDetailsAndAddClient(ClientWindowPageTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.&lt;init&gt;(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 31 more
+</pre></div></td>
+<td>5</td>
+<td>com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.obsqura.ServiceApp.NotificationPageTest.checkClickNotificationAndNavigateToQuantityAlerts()'><b>checkClickNotificationAndNavigateToQuantityAlerts</b><br>Test class: com.obsqura.ServiceApp.NotificationPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.obsqura.ServiceApp.NotificationPageTest@10db82ae</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.NotificationPageTest.checkClickNotificationAndQuantityAlertTitle()'><b>checkClickNotificationAndQuantityAlertTitle</b><br>Test class: com.obsqura.ServiceApp.NotificationPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.obsqura.ServiceApp.NotificationPageTest@10db82ae</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ReparationWindowPageTest.checkClickOnMoreInfoAndExportPdfFile()'><b>checkClickOnMoreInfoAndExportPdfFile</b><br>Test class: com.obsqura.ServiceApp.ReparationWindowPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.HomePageTest.checkEnterAnInvalidMailIdDetailsAndSend()'><b>checkEnterAnInvalidMailIdDetailsAndSend</b><br>Test class: com.obsqura.ServiceApp.HomePageTest<br>Parameters: ravisankar_gatgmailcom, Mobile Screenshot, Screenshot HD capture and quality</td>
+<td></td>
+<td>4</td>
+<td>com.obsqura.ServiceApp.HomePageTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.HomePageTest.verifyAndGetColorOfThreeContainerBoxes()'><b>verifyAndGetColorOfThreeContainerBoxes</b><br>Test class: com.obsqura.ServiceApp.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.obsqura.ServiceApp.HomePageTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.LoginPageTest.verifyClickForgotPassword()'><b>verifyClickForgotPassword</b><br>Test class: com.obsqura.ServiceApp.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.obsqura.ServiceApp.LoginPageTest@27c86f2d</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.InventoryPageInfoTest.verifyClickOnInventoryPdtMoreInfoAndFetchUrl()'><b>verifyClickOnInventoryPdtMoreInfoAndFetchUrl</b><br>Test class: com.obsqura.ServiceApp.InventoryPageInfoTest</td>
+<td></td>
+<td>4</td>
+<td>com.obsqura.ServiceApp.InventoryPageInfoTest@197d671</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ReparationWindowPageTest.verifyClickOnPrintBarcodeInNewWindowCheckHeader()'><b>verifyClickOnPrintBarcodeInNewWindowCheckHeader</b><br>Test class: com.obsqura.ServiceApp.ReparationWindowPageTest</td>
+<td></td>
+<td>9</td>
+<td>com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ClientMoreInfoPageTest.verifyClickOnViewClientInNewWindowAndModifyName()'><b>verifyClickOnViewClientInNewWindowAndModifyName</b><br>Test class: com.obsqura.ServiceApp.ClientMoreInfoPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.LoginPageTest.verifyClickRememberCheckBoxOnly()'><b>verifyClickRememberCheckBoxOnly</b><br>Test class: com.obsqura.ServiceApp.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.obsqura.ServiceApp.LoginPageTest@27c86f2d</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.HomePageTest.verifyEnterAnyTwoFieldsOfQuickEmailAndSend()'><b>verifyEnterAnyTwoFieldsOfQuickEmailAndSend</b><br>Test class: com.obsqura.ServiceApp.HomePageTest<br>Parameters: vimal_h@reddifmail.com, Mobile Screenshot Sharpening</td>
+<td></td>
+<td>5</td>
+<td>com.obsqura.ServiceApp.HomePageTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.LoginPageTest.verifyEnterPasswordAndRememberCheckBoxOnly()'><b>verifyEnterPasswordAndRememberCheckBoxOnly</b><br>Test class: com.obsqura.ServiceApp.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.obsqura.ServiceApp.LoginPageTest@27c86f2d</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.LoginPageTest.verifyEnterUsernameAndPassword()'><b>verifyEnterUsernameAndPassword</b><br>Test class: com.obsqura.ServiceApp.LoginPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.obsqura.ServiceApp.LoginPageTest@27c86f2d</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.LoginPageTest.verifyEnterUsernameAndRememberCheckBoxOnly()'><b>verifyEnterUsernameAndRememberCheckBoxOnly</b><br>Test class: com.obsqura.ServiceApp.LoginPageTest<br>Parameters: admin@admin.com</td>
+<td></td>
+<td>0</td>
+<td>com.obsqura.ServiceApp.LoginPageTest@27c86f2d</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ReparationWindowPageTest.verifyGetColorOfTheButtonsOfAddReparation()'><b>verifyGetColorOfTheButtonsOfAddReparation</b><br>Test class: com.obsqura.ServiceApp.ReparationWindowPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.SendEmailWindowPageTest.verifySelectNameEnterMessageAndSend()'><b>verifySelectNameEnterMessageAndSend</b><br>Test class: com.obsqura.ServiceApp.SendEmailWindowPageTest</td>
+<td></td>
+<td>12</td>
+<td>com.obsqura.ServiceApp.SendEmailWindowPageTest@79ad8b2f</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.SendSMSWindowPageTest.verifySelectNameEnterMessageAndSend()'><b>verifySelectNameEnterMessageAndSend</b><br>Test class: com.obsqura.ServiceApp.SendSMSWindowPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.obsqura.ServiceApp.SendSMSWindowPageTest@1df82230</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.DropdownUserMenuTest.verifyUserSignOut()'><b>verifyUserSignOut</b><br>Test class: com.obsqura.ServiceApp.DropdownUserMenuTest</td>
+<td></td>
+<td>4</td>
+<td>com.obsqura.ServiceApp.DropdownUserMenuTest@78b729e6</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ClientWindowPageTest.verifycolorOfTheVariousButtonsOfAddClientForm()'><b>verifycolorOfTheVariousButtonsOfAddClientForm</b><br>Test class: com.obsqura.ServiceApp.ClientWindowPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc</td></tr>
+<tr>
+<td title='com.obsqura.ServiceApp.ClientWindowPageTest.verifyeEnterClientDetailsWithoutNameAndAddClient()'><b>verifyeEnterClientDetailsWithoutNameAndAddClient</b><br>Test class: com.obsqura.ServiceApp.ClientWindowPageTest<br>Parameters: Lewbricks Solutions, Mumbai, Mayank Vihar, Dombivilli East, Bombay, Andheri, 047239, 6734209836, nakul89@rediffmail.com, CG87OP54, 56YU98, Samsung yfold phone screen display</td>
+<td></td>
+<td>5</td>
+<td>com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc</td></tr>
 </table><p>
 </body>
 </html>

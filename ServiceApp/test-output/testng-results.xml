@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="10" ignored="0" total="30" passed="20">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27693" started-at="2023-01-18T17:49:18Z" finished-at="2023-01-18T17:49:45Z">
+  <suite name="Suite" duration-ms="463934" started-at="2023-01-24T16:33:17Z" finished-at="2023-01-24T16:41:01Z">
     <groups>
+      <group name="Regression">
+        <method signature="NotificationPageTest.checkClickNotificationAndNavigateToQuantityAlerts()[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="checkClickNotificationAndNavigateToQuantityAlerts" class="com.obsqura.ServiceApp.NotificationPageTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="NotificationPageTest.checkClickNotificationAndQuantityAlertTitle()[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="checkClickNotificationAndQuantityAlertTitle" class="com.obsqura.ServiceApp.NotificationPageTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="27693" started-at="2023-01-18T17:49:18Z" finished-at="2023-01-18T17:49:45Z">
-      <class name="com.obsqura.ServiceApp.SendEmailWindowPageTest">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@69930714]" name="initBrowser" is-config="true" duration-ms="16" started-at="2023-01-18T21:49:18Z" finished-at="2023-01-18T21:49:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@69930714]" name="initializeBrowser" is-config="true" duration-ms="8831" started-at="2023-01-18T21:49:18Z" finished-at="2023-01-18T21:49:27Z">
+    <test name="Test" duration-ms="463934" started-at="2023-01-24T16:33:17Z" finished-at="2023-01-24T16:41:01Z">
+      <class name="com.obsqura.ServiceApp.HomePageTest">
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initializeBrowser" is-config="true" duration-ms="6629" started-at="2023-01-24T20:34:36Z" finished-at="2023-01-24T20:34:42Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +24,159 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method status="FAIL" signature="verifySelectNameEnterMessageAndSend()[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@69930714]" name="verifySelectNameEnterMessageAndSend" duration-ms="17835" started-at="2023-01-18T21:49:27Z" finished-at="2023-01-18T21:49:44Z">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initBrowser" is-config="true" duration-ms="0" started-at="2023-01-24T20:34:36Z" finished-at="2023-01-24T20:34:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="checkEnterAnInvalidMailIdDetailsAndSend(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="checkEnterAnInvalidMailIdDetailsAndSend" duration-ms="4794" started-at="2023-01-24T20:34:42Z" finished-at="2023-01-24T20:34:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ravisankar_gatgmailcom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mobile Screenshot]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Screenshot HD capture and quality]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEnterAnInvalidMailIdDetailsAndSend -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="browserQuit" is-config="true" duration-ms="983" started-at="2023-01-24T20:34:47Z" finished-at="2023-01-24T20:34:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkEnterAnInvalidMailIdDetailsAndSend status=SUCCESS method=HomePageTest.checkEnterAnInvalidMailIdDetailsAndSend(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initBrowser" is-config="true" duration-ms="16" started-at="2023-01-24T20:34:48Z" finished-at="2023-01-24T20:34:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initializeBrowser" is-config="true" duration-ms="6955" started-at="2023-01-24T20:34:48Z" finished-at="2023-01-24T20:34:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="FAIL" signature="verifyAndClickOnDateCalenderAddEventIfAddedOrNot()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="verifyAndClickOnDateCalenderAddEventIfAddedOrNot" duration-ms="3913" started-at="2023-01-24T20:34:55Z" finished-at="2023-01-24T20:34:59Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='modal-content']//child::input[@class='bootbox-input bootbox-input-text form-control']"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [126511c1f84aeb33f29d476512ef1e8b, findElement {using=xpath, value=//div[@class='modal-content']//child::input[@class='bootbox-input bootbox-input-text form-control']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63211/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 126511c1f84aeb33f29d476512ef1e8b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='modal-content']//child::input[@class='bootbox-input bootbox-input-text form-control']"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [126511c1f84aeb33f29d476512ef1e8b, findElement {using=xpath, value=//div[@class='modal-content']//child::input[@class='bootbox-input bootbox-input-text form-control']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63211/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 126511c1f84aeb33f29d476512ef1e8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at utilities.PageUtility.enterText(PageUtility.java:20)
+	at pages.HomePage.clickOnDateCalenderAddEventIfAddedOrNot(HomePage.java:88)
+	at com.obsqura.ServiceApp.HomePageTest.verifyAndClickOnDateCalenderAddEventIfAddedOrNot(HomePageTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAndClickOnDateCalenderAddEventIfAddedOrNot -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="browserQuit" is-config="true" duration-ms="1441" started-at="2023-01-24T20:34:59Z" finished-at="2023-01-24T20:35:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAndClickOnDateCalenderAddEventIfAddedOrNot status=FAILURE method=HomePageTest.verifyAndClickOnDateCalenderAddEventIfAddedOrNot()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initBrowser" is-config="true" duration-ms="16" started-at="2023-01-24T20:35:00Z" finished-at="2023-01-24T20:35:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initializeBrowser" is-config="true" duration-ms="6889" started-at="2023-01-24T20:35:00Z" finished-at="2023-01-24T20:35:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="FAIL" signature="verifyAndClickOnDateCalenderEventAndDeleteIt()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="verifyAndClickOnDateCalenderEventAndDeleteIt" duration-ms="4276" started-at="2023-01-24T20:35:07Z" finished-at="2023-01-24T20:35:12Z">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -30,10 +184,10 @@
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b06a55b92c59cb0400caaf36d8281918, clickElement {id=3f28ca72-b46a-4261-a4c6-20f4b722ed49}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58535/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b06a55b92c59cb0400caaf36d8281918)] -> xpath: //input[@name='subject']]
-Session ID: b06a55b92c59cb0400caaf36d8281918]]>
+Command: [bfeed86fe64d09d74391289108645f0a, clickElement {id=46424f2e-5f03-4a2c-8229-f5dacc9b0b0b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63301}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63301/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfeed86fe64d09d74391289108645f0a)] -> xpath: //button[@data-bb-handler='confirm']]
+Session ID: bfeed86fe64d09d74391289108645f0a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -41,10 +195,10 @@ Session ID: b06a55b92c59cb0400caaf36d8281918]]>
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b06a55b92c59cb0400caaf36d8281918, clickElement {id=3f28ca72-b46a-4261-a4c6-20f4b722ed49}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58535/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b06a55b92c59cb0400caaf36d8281918)] -> xpath: //input[@name='subject']]
-Session ID: b06a55b92c59cb0400caaf36d8281918
+Command: [bfeed86fe64d09d74391289108645f0a, clickElement {id=46424f2e-5f03-4a2c-8229-f5dacc9b0b0b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63301}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63301/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bfeed86fe64d09d74391289108645f0a)] -> xpath: //button[@data-bb-handler='confirm']]
+Session ID: bfeed86fe64d09d74391289108645f0a
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -58,15 +212,14 @@ Session ID: b06a55b92c59cb0400caaf36d8281918
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy20.click(Unknown Source)
 	at utilities.PageUtility.clickOnElement(PageUtility.java:12)
-	at pages.SendEmailWindowPage.selectMultipleNamesSubjectNoMessageAndSend(SendEmailWindowPage.java:72)
-	at com.obsqura.ServiceApp.SendEmailWindowPageTest.verifySelectNameEnterMessageAndSend(SendEmailWindowPageTest.java:15)
+	at pages.HomePage.clickOnDateCalenderEventAndDeleteIt(HomePage.java:99)
+	at com.obsqura.ServiceApp.HomePageTest.verifyAndClickOnDateCalenderEventAndDeleteIt(HomePageTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -97,12 +250,794 @@ Session ID: b06a55b92c59cb0400caaf36d8281918
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySelectNameEnterMessageAndSend -->
-        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@69930714]" name="browserQuit" is-config="true" duration-ms="981" started-at="2023-01-18T21:49:44Z" finished-at="2023-01-18T21:49:45Z">
+        </test-method> <!-- verifyAndClickOnDateCalenderEventAndDeleteIt -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="browserQuit" is-config="true" duration-ms="1501" started-at="2023-01-24T20:35:12Z" finished-at="2023-01-24T20:35:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySelectNameEnterMessageAndSend status=FAILURE method=SendEmailWindowPageTest.verifySelectNameEnterMessageAndSend()[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@69930714] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAndClickOnDateCalenderEventAndDeleteIt status=FAILURE method=HomePageTest.verifyAndClickOnDateCalenderEventAndDeleteIt()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initBrowser" is-config="true" duration-ms="34" started-at="2023-01-24T20:35:13Z" finished-at="2023-01-24T20:35:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initializeBrowser" is-config="true" duration-ms="7243" started-at="2023-01-24T20:35:13Z" finished-at="2023-01-24T20:35:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyAndGetColorOfThreeContainerBoxes()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="verifyAndGetColorOfThreeContainerBoxes" duration-ms="3984" started-at="2023-01-24T20:35:20Z" finished-at="2023-01-24T20:35:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAndGetColorOfThreeContainerBoxes -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="browserQuit" is-config="true" duration-ms="975" started-at="2023-01-24T20:35:24Z" finished-at="2023-01-24T20:35:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAndGetColorOfThreeContainerBoxes status=SUCCESS method=HomePageTest.verifyAndGetColorOfThreeContainerBoxes()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initBrowser" is-config="true" duration-ms="16" started-at="2023-01-24T20:35:25Z" finished-at="2023-01-24T20:35:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="initializeBrowser" is-config="true" duration-ms="7396" started-at="2023-01-24T20:35:25Z" finished-at="2023-01-24T20:35:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyEnterAnyTwoFieldsOfQuickEmailAndSend(java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="verifyEnterAnyTwoFieldsOfQuickEmailAndSend" duration-ms="5030" started-at="2023-01-24T20:35:33Z" data-provider="formData2" finished-at="2023-01-24T20:35:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vimal_h@reddifmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mobile Screenshot Sharpening]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnterAnyTwoFieldsOfQuickEmailAndSend -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18]" name="browserQuit" is-config="true" duration-ms="1034" started-at="2023-01-24T20:35:38Z" finished-at="2023-01-24T20:35:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEnterAnyTwoFieldsOfQuickEmailAndSend status=SUCCESS method=HomePageTest.verifyEnterAnyTwoFieldsOfQuickEmailAndSend(java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.HomePageTest@6b4a4e18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.ServiceApp.HomePageTest -->
+      <class name="com.obsqura.ServiceApp.ReparationWindowPageTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initBrowser" is-config="true" duration-ms="46" started-at="2023-01-24T20:38:39Z" finished-at="2023-01-24T20:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initializeBrowser" is-config="true" duration-ms="7891" started-at="2023-01-24T20:38:39Z" finished-at="2023-01-24T20:38:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="FAIL" signature="verifyAndEnterMandatoryDetailsAddReparationReportGenerated(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="verifyAndEnterMandatoryDetailsAddReparationReportGenerated" duration-ms="4359" started-at="2023-01-24T20:38:47Z" data-provider="formData4" finished-at="2023-01-24T20:38:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2WR6J89]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Oppo Reno]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Screen break]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[14 PLUS PRO]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[B6R4W32P0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1b9b85afe388b50effd7be9ffbb5be3, sendKeysToElement {id=bdf331be-90e3-4259-9d32-7c624a387e82, value=[Ljava.lang.CharSequence;@5ff29e8b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65315/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a1b9b85afe388b50effd7be9ffbb5be3)] -> xpath: //input[@id='imei']]
+Session ID: a1b9b85afe388b50effd7be9ffbb5be3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1b9b85afe388b50effd7be9ffbb5be3, sendKeysToElement {id=bdf331be-90e3-4259-9d32-7c624a387e82, value=[Ljava.lang.CharSequence;@5ff29e8b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65315/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a1b9b85afe388b50effd7be9ffbb5be3)] -> xpath: //input[@id='imei']]
+Session ID: a1b9b85afe388b50effd7be9ffbb5be3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at utilities.PageUtility.enterText(PageUtility.java:20)
+	at pages.ReparationWindowPage.enterMandatoryDetailsAddReparationReportGenerated(ReparationWindowPage.java:185)
+	at com.obsqura.ServiceApp.ReparationWindowPageTest.verifyAndEnterMandatoryDetailsAddReparationReportGenerated(ReparationWindowPageTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAndEnterMandatoryDetailsAddReparationReportGenerated -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="browserQuit" is-config="true" duration-ms="1601" started-at="2023-01-24T20:38:52Z" finished-at="2023-01-24T20:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAndEnterMandatoryDetailsAddReparationReportGenerated status=FAILURE method=ReparationWindowPageTest.verifyAndEnterMandatoryDetailsAddReparationReportGenerated(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initBrowser" is-config="true" duration-ms="15" started-at="2023-01-24T20:38:53Z" finished-at="2023-01-24T20:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initializeBrowser" is-config="true" duration-ms="7459" started-at="2023-01-24T20:38:53Z" finished-at="2023-01-24T20:39:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="checkClickOnMoreInfoAndExportPdfFile()[pri:1, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="checkClickOnMoreInfoAndExportPdfFile" duration-ms="7135" started-at="2023-01-24T20:39:01Z" finished-at="2023-01-24T20:39:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkClickOnMoreInfoAndExportPdfFile -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="browserQuit" is-config="true" duration-ms="1313" started-at="2023-01-24T20:39:08Z" finished-at="2023-01-24T20:39:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkClickOnMoreInfoAndExportPdfFile status=SUCCESS method=ReparationWindowPageTest.checkClickOnMoreInfoAndExportPdfFile()[pri:1, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initBrowser" is-config="true" duration-ms="14" started-at="2023-01-24T20:39:09Z" finished-at="2023-01-24T20:39:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initializeBrowser" is-config="true" duration-ms="7623" started-at="2023-01-24T20:39:09Z" finished-at="2023-01-24T20:39:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyGetColorOfTheButtonsOfAddReparation()[pri:2, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="verifyGetColorOfTheButtonsOfAddReparation" duration-ms="6319" started-at="2023-01-24T20:39:17Z" finished-at="2023-01-24T20:39:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetColorOfTheButtonsOfAddReparation -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="browserQuit" is-config="true" duration-ms="1136" started-at="2023-01-24T20:39:23Z" finished-at="2023-01-24T20:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGetColorOfTheButtonsOfAddReparation status=SUCCESS method=ReparationWindowPageTest.verifyGetColorOfTheButtonsOfAddReparation()[pri:2, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initBrowser" is-config="true" duration-ms="22" started-at="2023-01-24T20:39:24Z" finished-at="2023-01-24T20:39:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initializeBrowser" is-config="true" duration-ms="6691" started-at="2023-01-24T20:39:24Z" finished-at="2023-01-24T20:39:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyClickOnPrintBarcodeInNewWindowCheckHeader()[pri:3, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="verifyClickOnPrintBarcodeInNewWindowCheckHeader" duration-ms="9491" started-at="2023-01-24T20:39:31Z" finished-at="2023-01-24T20:39:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnPrintBarcodeInNewWindowCheckHeader -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="browserQuit" is-config="true" duration-ms="1085" started-at="2023-01-24T20:39:40Z" finished-at="2023-01-24T20:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickOnPrintBarcodeInNewWindowCheckHeader status=SUCCESS method=ReparationWindowPageTest.verifyClickOnPrintBarcodeInNewWindowCheckHeader()[pri:3, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initBrowser" is-config="true" duration-ms="31" started-at="2023-01-24T20:39:41Z" finished-at="2023-01-24T20:39:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initializeBrowser" is-config="true" duration-ms="7283" started-at="2023-01-24T20:39:41Z" finished-at="2023-01-24T20:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="FAIL" signature="verifyClickOnViewReparationInNewWindow()[pri:4, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="verifyClickOnViewReparationInNewWindow" duration-ms="58091" started-at="2023-01-24T20:39:49Z" finished-at="2023-01-24T20:40:47Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (01c77d6c7f31d0d36c0693f04cad1213)] -> xpath: //a[@href='#view_reparation']] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49422/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01c77d6c7f31d0d36c0693f04cad1213]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (01c77d6c7f31d0d36c0693f04cad1213)] -> xpath: //a[@href='#view_reparation']] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49422/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01c77d6c7f31d0d36c0693f04cad1213
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.WaitUtility.waitForVisibilityOfWebelement(WaitUtility.java:131)
+	at pages.ReparationWindowPage.clickOnViewReparationInNewWindow(ReparationWindowPage.java:215)
+	at com.obsqura.ServiceApp.ReparationWindowPageTest.verifyClickOnViewReparationInNewWindow(ReparationWindowPageTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnViewReparationInNewWindow -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="browserQuit" is-config="true" duration-ms="1083" started-at="2023-01-24T20:40:47Z" finished-at="2023-01-24T20:40:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickOnViewReparationInNewWindow status=FAILURE method=ReparationWindowPageTest.verifyClickOnViewReparationInNewWindow()[pri:4, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initializeBrowser" is-config="true" duration-ms="7604" started-at="2023-01-24T20:40:48Z" finished-at="2023-01-24T20:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="initBrowser" is-config="true" duration-ms="0" started-at="2023-01-24T20:40:48Z" finished-at="2023-01-24T20:40:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="FAIL" signature="verifyAndEnterSomeReparationDetailseAndAddReparation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="verifyAndEnterSomeReparationDetailseAndAddReparation" duration-ms="4176" started-at="2023-01-24T20:40:56Z" finished-at="2023-01-24T20:41:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7YE5TR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Screen Scratch]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mobilecase]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Screen break]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[B6R4W32P0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Cannot be fixed without adhesive tape]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c9ed7985d60fd12302cf9faae880c97, sendKeysToElement {id=c82581c8-3c68-4865-8772-e32a2dc9754b, value=[Ljava.lang.CharSequence;@46cb800b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49702/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5c9ed7985d60fd12302cf9faae880c97)] -> xpath: //input[@id='imei']]
+Session ID: 5c9ed7985d60fd12302cf9faae880c97]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c9ed7985d60fd12302cf9faae880c97, sendKeysToElement {id=c82581c8-3c68-4865-8772-e32a2dc9754b, value=[Ljava.lang.CharSequence;@46cb800b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49702/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5c9ed7985d60fd12302cf9faae880c97)] -> xpath: //input[@id='imei']]
+Session ID: 5c9ed7985d60fd12302cf9faae880c97
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at utilities.PageUtility.enterText(PageUtility.java:20)
+	at pages.ReparationWindowPage.enterSomeReparationDetailsAndAddReparation(ReparationWindowPage.java:147)
+	at com.obsqura.ServiceApp.ReparationWindowPageTest.verifyAndEnterSomeReparationDetailseAndAddReparation(ReparationWindowPageTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAndEnterSomeReparationDetailseAndAddReparation -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0]" name="browserQuit" is-config="true" duration-ms="1717" started-at="2023-01-24T20:41:00Z" finished-at="2023-01-24T20:41:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAndEnterSomeReparationDetailseAndAddReparation status=FAILURE method=ReparationWindowPageTest.verifyAndEnterSomeReparationDetailseAndAddReparation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.obsqura.ServiceApp.ReparationWindowPageTest@22635ba0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.ServiceApp.ReparationWindowPageTest -->
+      <class name="com.obsqura.ServiceApp.ClientWindowPageTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="initBrowser" is-config="true" duration-ms="16" started-at="2023-01-24T20:37:20Z" finished-at="2023-01-24T20:37:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="initializeBrowser" is-config="true" duration-ms="6428" started-at="2023-01-24T20:37:20Z" finished-at="2023-01-24T20:37:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="FAIL" signature="verifyEnterClientDetailsAndAddClient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="verifyEnterClientDetailsAndAddClient" duration-ms="5899" started-at="2023-01-24T20:37:27Z" data-provider="formData3" finished-at="2023-01-24T20:37:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lewbricks Solutions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mayank Vihar, Dombivilli East, Bombay]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Andheri]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[047239]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[6734209836]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[nakul89@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[CG87OP54]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[56YU98]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Samsung yfold phone screen display]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Cannot run program "C:\\Users\\admin\\Desktop\\ServiceApp\\ScreengRepair.exe": CreateProcess error=2, The system cannot find the file specified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Cannot run program "C:\\Users\\admin\\Desktop\\ServiceApp\\ScreengRepair.exe": CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at pages.ClientWindowPage.enterClientDetailsAndAddClient(ClientWindowPage.java:142)
+	at com.obsqura.ServiceApp.ClientWindowPageTest.verifyEnterClientDetailsAndAddClient(ClientWindowPageTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnterClientDetailsAndAddClient -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="browserQuit" is-config="true" duration-ms="1379" started-at="2023-01-24T20:37:33Z" finished-at="2023-01-24T20:37:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEnterClientDetailsAndAddClient status=FAILURE method=ClientWindowPageTest.verifyEnterClientDetailsAndAddClient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="initBrowser" is-config="true" duration-ms="15" started-at="2023-01-24T20:37:34Z" finished-at="2023-01-24T20:37:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="initializeBrowser" is-config="true" duration-ms="8207" started-at="2023-01-24T20:37:34Z" finished-at="2023-01-24T20:37:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifycolorOfTheVariousButtonsOfAddClientForm()[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="verifycolorOfTheVariousButtonsOfAddClientForm" duration-ms="4729" started-at="2023-01-24T20:37:42Z" finished-at="2023-01-24T20:37:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycolorOfTheVariousButtonsOfAddClientForm -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="browserQuit" is-config="true" duration-ms="1235" started-at="2023-01-24T20:37:47Z" finished-at="2023-01-24T20:37:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifycolorOfTheVariousButtonsOfAddClientForm status=SUCCESS method=ClientWindowPageTest.verifycolorOfTheVariousButtonsOfAddClientForm()[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="initBrowser" is-config="true" duration-ms="65" started-at="2023-01-24T20:37:48Z" finished-at="2023-01-24T20:37:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="initializeBrowser" is-config="true" duration-ms="7702" started-at="2023-01-24T20:37:48Z" finished-at="2023-01-24T20:37:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyeEnterClientDetailsWithoutNameAndAddClient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="verifyeEnterClientDetailsWithoutNameAndAddClient" duration-ms="5731" started-at="2023-01-24T20:37:56Z" data-provider="formData" finished-at="2023-01-24T20:38:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lewbricks Solutions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mayank Vihar, Dombivilli East, Bombay]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Andheri]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[047239]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[6734209836]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[nakul89@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[CG87OP54]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[56YU98]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Samsung yfold phone screen display]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyeEnterClientDetailsWithoutNameAndAddClient -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc]" name="browserQuit" is-config="true" duration-ms="1016" started-at="2023-01-24T20:38:02Z" finished-at="2023-01-24T20:38:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyeEnterClientDetailsWithoutNameAndAddClient status=SUCCESS method=ClientWindowPageTest.verifyeEnterClientDetailsWithoutNameAndAddClient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ClientWindowPageTest@402e37bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.ServiceApp.ClientWindowPageTest -->
+      <class name="com.obsqura.ServiceApp.SendEmailWindowPageTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@79ad8b2f]" name="initBrowser" is-config="true" duration-ms="16" started-at="2023-01-24T20:38:03Z" finished-at="2023-01-24T20:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@79ad8b2f]" name="initializeBrowser" is-config="true" duration-ms="6879" started-at="2023-01-24T20:38:03Z" finished-at="2023-01-24T20:38:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifySelectNameEnterMessageAndSend()[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@79ad8b2f]" name="verifySelectNameEnterMessageAndSend" duration-ms="12484" started-at="2023-01-24T20:38:10Z" finished-at="2023-01-24T20:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySelectNameEnterMessageAndSend -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@79ad8b2f]" name="browserQuit" is-config="true" duration-ms="1534" started-at="2023-01-24T20:38:22Z" finished-at="2023-01-24T20:38:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySelectNameEnterMessageAndSend status=SUCCESS method=SendEmailWindowPageTest.verifySelectNameEnterMessageAndSend()[pri:0, instance:com.obsqura.ServiceApp.SendEmailWindowPageTest@79ad8b2f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -110,6 +1045,760 @@ Session ID: b06a55b92c59cb0400caaf36d8281918
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- com.obsqura.ServiceApp.SendEmailWindowPageTest -->
+      <class name="com.obsqura.ServiceApp.SendSMSWindowPageTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.SendSMSWindowPageTest@1df82230]" name="initBrowser" is-config="true" duration-ms="18" started-at="2023-01-24T20:38:24Z" finished-at="2023-01-24T20:38:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.SendSMSWindowPageTest@1df82230]" name="initializeBrowser" is-config="true" duration-ms="7447" started-at="2023-01-24T20:38:24Z" finished-at="2023-01-24T20:38:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifySelectNameEnterMessageAndSend()[pri:0, instance:com.obsqura.ServiceApp.SendSMSWindowPageTest@1df82230]" name="verifySelectNameEnterMessageAndSend" duration-ms="6792" started-at="2023-01-24T20:38:31Z" finished-at="2023-01-24T20:38:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySelectNameEnterMessageAndSend -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.SendSMSWindowPageTest@1df82230]" name="browserQuit" is-config="true" duration-ms="1138" started-at="2023-01-24T20:38:38Z" finished-at="2023-01-24T20:38:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySelectNameEnterMessageAndSend status=SUCCESS method=SendSMSWindowPageTest.verifySelectNameEnterMessageAndSend()[pri:0, instance:com.obsqura.ServiceApp.SendSMSWindowPageTest@1df82230] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.ServiceApp.SendSMSWindowPageTest -->
+      <class name="com.obsqura.ServiceApp.LoginPageTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initBrowser" is-config="true" duration-ms="31" started-at="2023-01-24T20:35:39Z" finished-at="2023-01-24T20:35:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initializeBrowser" is-config="true" duration-ms="7446" started-at="2023-01-24T20:35:39Z" finished-at="2023-01-24T20:35:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyClickForgotPassword()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="verifyClickForgotPassword" duration-ms="1793" started-at="2023-01-24T20:35:46Z" finished-at="2023-01-24T20:35:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickForgotPassword -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="browserQuit" is-config="true" duration-ms="900" started-at="2023-01-24T20:35:48Z" finished-at="2023-01-24T20:35:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickForgotPassword status=SUCCESS method=LoginPageTest.verifyClickForgotPassword()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initBrowser" is-config="true" duration-ms="16" started-at="2023-01-24T20:35:49Z" finished-at="2023-01-24T20:35:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initializeBrowser" is-config="true" duration-ms="7888" started-at="2023-01-24T20:35:49Z" finished-at="2023-01-24T20:35:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyClickRememberCheckBoxOnly()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="verifyClickRememberCheckBoxOnly" duration-ms="895" started-at="2023-01-24T20:35:57Z" finished-at="2023-01-24T20:35:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickRememberCheckBoxOnly -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="browserQuit" is-config="true" duration-ms="884" started-at="2023-01-24T20:35:58Z" finished-at="2023-01-24T20:35:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickRememberCheckBoxOnly status=SUCCESS method=LoginPageTest.verifyClickRememberCheckBoxOnly()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initBrowser" is-config="true" duration-ms="16" started-at="2023-01-24T20:35:59Z" finished-at="2023-01-24T20:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initializeBrowser" is-config="true" duration-ms="7318" started-at="2023-01-24T20:35:59Z" finished-at="2023-01-24T20:36:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyEnterPasswordAndRememberCheckBoxOnly()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="verifyEnterPasswordAndRememberCheckBoxOnly" duration-ms="967" started-at="2023-01-24T20:36:06Z" finished-at="2023-01-24T20:36:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnterPasswordAndRememberCheckBoxOnly -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="browserQuit" is-config="true" duration-ms="885" started-at="2023-01-24T20:36:07Z" finished-at="2023-01-24T20:36:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEnterPasswordAndRememberCheckBoxOnly status=SUCCESS method=LoginPageTest.verifyEnterPasswordAndRememberCheckBoxOnly()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initializeBrowser" is-config="true" duration-ms="6896" started-at="2023-01-24T20:36:08Z" finished-at="2023-01-24T20:36:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initBrowser" is-config="true" duration-ms="0" started-at="2023-01-24T20:36:08Z" finished-at="2023-01-24T20:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="verifyEnterUsernameAndPassword()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="verifyEnterUsernameAndPassword" duration-ms="3904" started-at="2023-01-24T20:36:15Z" finished-at="2023-01-24T20:36:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnterUsernameAndPassword -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="browserQuit" is-config="true" duration-ms="945" started-at="2023-01-24T20:36:19Z" finished-at="2023-01-24T20:36:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEnterUsernameAndPassword status=SUCCESS method=LoginPageTest.verifyEnterUsernameAndPassword()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initBrowser" is-config="true" duration-ms="15" started-at="2023-01-24T20:36:20Z" finished-at="2023-01-24T20:36:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="initializeBrowser" is-config="true" duration-ms="6906" started-at="2023-01-24T20:36:20Z" finished-at="2023-01-24T20:36:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyEnterUsernameAndRememberCheckBoxOnly(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="verifyEnterUsernameAndRememberCheckBoxOnly" duration-ms="962" started-at="2023-01-24T20:36:26Z" finished-at="2023-01-24T20:36:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@admin.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnterUsernameAndRememberCheckBoxOnly -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d]" name="browserQuit" is-config="true" duration-ms="952" started-at="2023-01-24T20:36:27Z" finished-at="2023-01-24T20:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEnterUsernameAndRememberCheckBoxOnly status=SUCCESS method=LoginPageTest.verifyEnterUsernameAndRememberCheckBoxOnly(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.LoginPageTest@27c86f2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.ServiceApp.LoginPageTest -->
+      <class name="com.obsqura.ServiceApp.InventoryPageInfoTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="initBrowser" is-config="true" duration-ms="11" started-at="2023-01-24T20:36:28Z" finished-at="2023-01-24T20:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="initializeBrowser" is-config="true" duration-ms="6823" started-at="2023-01-24T20:36:28Z" finished-at="2023-01-24T20:36:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="FAIL" signature="checkAndClickOnInventoryPdtTableElementAndInspectButtonColors()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="checkAndClickOnInventoryPdtTableElementAndInspectButtonColors" duration-ms="5164" started-at="2023-01-24T20:36:35Z" finished-at="2023-01-24T20:36:40Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [555451d8d0a5ecd96f35a91640485270, clickElement {id=b31fa694-847b-4e20-aab1-d36136de85a9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64140/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (555451d8d0a5ecd96f35a91640485270)] -> xpath: //table[@id='PRData']//tbody//child::tr]
+Session ID: 555451d8d0a5ecd96f35a91640485270]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [555451d8d0a5ecd96f35a91640485270, clickElement {id=b31fa694-847b-4e20-aab1-d36136de85a9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64140/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (555451d8d0a5ecd96f35a91640485270)] -> xpath: //table[@id='PRData']//tbody//child::tr]
+Session ID: 555451d8d0a5ecd96f35a91640485270
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at utilities.PageUtility.clickOnElement(PageUtility.java:12)
+	at pages.InventoryPageInfo.clickOnInventoryPdtTableElementAndInspectButtonColors(InventoryPageInfo.java:86)
+	at com.obsqura.ServiceApp.InventoryPageInfoTest.checkAndClickOnInventoryPdtTableElementAndInspectButtonColors(InventoryPageInfoTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAndClickOnInventoryPdtTableElementAndInspectButtonColors -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="browserQuit" is-config="true" duration-ms="1189" started-at="2023-01-24T20:36:40Z" finished-at="2023-01-24T20:36:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkAndClickOnInventoryPdtTableElementAndInspectButtonColors status=FAILURE method=InventoryPageInfoTest.checkAndClickOnInventoryPdtTableElementAndInspectButtonColors()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="initBrowser" is-config="true" duration-ms="16" started-at="2023-01-24T20:36:42Z" finished-at="2023-01-24T20:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="initializeBrowser" is-config="true" duration-ms="6856" started-at="2023-01-24T20:36:42Z" finished-at="2023-01-24T20:36:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="FAIL" signature="checkColorOfVariousButtonsInPrintBarcodeOrLabel()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="checkColorOfVariousButtonsInPrintBarcodeOrLabel" duration-ms="4866" started-at="2023-01-24T20:36:48Z" finished-at="2023-01-24T20:36:53Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='PRData']//tbody//tr[1]//td[9]//button"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75339614303e37b1db5b83f19d741847, findElement {using=xpath, value=//table[@id='PRData']//tbody//tr[1]//td[9]//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64271/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75339614303e37b1db5b83f19d741847]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='PRData']//tbody//tr[1]//td[9]//button"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75339614303e37b1db5b83f19d741847, findElement {using=xpath, value=//table[@id='PRData']//tbody//tr[1]//td[9]//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64271/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75339614303e37b1db5b83f19d741847
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.isSelected(Unknown Source)
+	at pages.InventoryPageInfo.colorOfVariousButtonsInPrintBarcodeOrLabel(InventoryPageInfo.java:100)
+	at com.obsqura.ServiceApp.InventoryPageInfoTest.checkColorOfVariousButtonsInPrintBarcodeOrLabel(InventoryPageInfoTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkColorOfVariousButtonsInPrintBarcodeOrLabel -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="browserQuit" is-config="true" duration-ms="1313" started-at="2023-01-24T20:36:53Z" finished-at="2023-01-24T20:36:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkColorOfVariousButtonsInPrintBarcodeOrLabel status=FAILURE method=InventoryPageInfoTest.checkColorOfVariousButtonsInPrintBarcodeOrLabel()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="initBrowser" is-config="true" duration-ms="15" started-at="2023-01-24T20:36:55Z" finished-at="2023-01-24T20:36:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="initializeBrowser" is-config="true" duration-ms="6836" started-at="2023-01-24T20:36:55Z" finished-at="2023-01-24T20:37:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="FAIL" signature="verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription" duration-ms="5056" started-at="2023-01-24T20:37:01Z" finished-at="2023-01-24T20:37:07Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='PRData']//tbody//tr[1]//td[9]//button"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [321ba11c5b463c251393a04700799ebc, findElement {using=xpath, value=//table[@id='PRData']//tbody//tr[1]//td[9]//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64420/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 321ba11c5b463c251393a04700799ebc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='PRData']//tbody//tr[1]//td[9]//button"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [321ba11c5b463c251393a04700799ebc, findElement {using=xpath, value=//table[@id='PRData']//tbody//tr[1]//td[9]//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64420/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 321ba11c5b463c251393a04700799ebc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.isSelected(Unknown Source)
+	at pages.InventoryPageInfo.clickOnPrintBarcodeOrLabelAndCheckTableHeader(InventoryPageInfo.java:69)
+	at com.obsqura.ServiceApp.InventoryPageInfoTest.verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription(InventoryPageInfoTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="browserQuit" is-config="true" duration-ms="1281" started-at="2023-01-24T20:37:07Z" finished-at="2023-01-24T20:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription status=FAILURE method=InventoryPageInfoTest.verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="initBrowser" is-config="true" duration-ms="0" started-at="2023-01-24T20:37:08Z" finished-at="2023-01-24T20:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="initializeBrowser" is-config="true" duration-ms="7004" started-at="2023-01-24T20:37:08Z" finished-at="2023-01-24T20:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyClickOnInventoryPdtMoreInfoAndFetchUrl()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="verifyClickOnInventoryPdtMoreInfoAndFetchUrl" duration-ms="4804" started-at="2023-01-24T20:37:15Z" finished-at="2023-01-24T20:37:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnInventoryPdtMoreInfoAndFetchUrl -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671]" name="browserQuit" is-config="true" duration-ms="861" started-at="2023-01-24T20:37:20Z" finished-at="2023-01-24T20:37:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickOnInventoryPdtMoreInfoAndFetchUrl status=SUCCESS method=InventoryPageInfoTest.verifyClickOnInventoryPdtMoreInfoAndFetchUrl()[pri:0, instance:com.obsqura.ServiceApp.InventoryPageInfoTest@197d671] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.ServiceApp.InventoryPageInfoTest -->
+      <class name="com.obsqura.ServiceApp.NotificationPageTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="initBrowser" is-config="true" duration-ms="37" started-at="2023-01-24T20:33:17Z" finished-at="2023-01-24T20:33:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="initializeBrowser" is-config="true" duration-ms="8617" started-at="2023-01-24T20:33:18Z" finished-at="2023-01-24T20:33:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="checkClickNotificationAndNavigateToQuantityAlerts()[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="checkClickNotificationAndNavigateToQuantityAlerts" duration-ms="7091" started-at="2023-01-24T20:33:26Z" finished-at="2023-01-24T20:33:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkClickNotificationAndNavigateToQuantityAlerts -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="browserQuit" is-config="true" duration-ms="1035" started-at="2023-01-24T20:33:33Z" finished-at="2023-01-24T20:33:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkClickNotificationAndNavigateToQuantityAlerts status=SUCCESS method=NotificationPageTest.checkClickNotificationAndNavigateToQuantityAlerts()[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="initBrowser" is-config="true" duration-ms="78" started-at="2023-01-24T20:33:34Z" finished-at="2023-01-24T20:33:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="initializeBrowser" is-config="true" duration-ms="7656" started-at="2023-01-24T20:33:34Z" finished-at="2023-01-24T20:33:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="checkClickNotificationAndQuantityAlertTitle()[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="checkClickNotificationAndQuantityAlertTitle" duration-ms="5535" started-at="2023-01-24T20:33:42Z" finished-at="2023-01-24T20:33:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkClickNotificationAndQuantityAlertTitle -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae]" name="browserQuit" is-config="true" duration-ms="1010" started-at="2023-01-24T20:33:48Z" finished-at="2023-01-24T20:33:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkClickNotificationAndQuantityAlertTitle status=SUCCESS method=NotificationPageTest.checkClickNotificationAndQuantityAlertTitle()[pri:0, instance:com.obsqura.ServiceApp.NotificationPageTest@10db82ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.ServiceApp.NotificationPageTest -->
+      <class name="com.obsqura.ServiceApp.ClientMoreInfoPageTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1]" name="initBrowser" is-config="true" duration-ms="78" started-at="2023-01-24T20:33:49Z" finished-at="2023-01-24T20:33:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1]" name="initializeBrowser" is-config="true" duration-ms="7958" started-at="2023-01-24T20:33:49Z" finished-at="2023-01-24T20:33:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="FAIL" signature="checkClickOnExportToExcelFileAndDownloadIt()[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1]" name="checkClickOnExportToExcelFileAndDownloadIt" duration-ms="9932" started-at="2023-01-24T20:33:57Z" finished-at="2023-01-24T20:34:07Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <i class="icon fa fa-tasks tip" data-placement="left" title="" data-original-title="Actions"></i> is not clickable at point (1247, 125). Other element would receive the click: <div id="loadingmessage" class="loader" style=""></div>
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb5c091703dba6a0c8df8541a6753360, clickElement {id=52364513-2550-45f9-8b74-45be06b25e28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62938/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bb5c091703dba6a0c8df8541a6753360)] -> xpath: //a[@data-toggle='dropdown']//child::i[@data-original-title='Actions']]
+Session ID: bb5c091703dba6a0c8df8541a6753360]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="icon fa fa-tasks tip" data-placement="left" title="" data-original-title="Actions"></i> is not clickable at point (1247, 125). Other element would receive the click: <div id="loadingmessage" class="loader" style=""></div>
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb5c091703dba6a0c8df8541a6753360, clickElement {id=52364513-2550-45f9-8b74-45be06b25e28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62938/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bb5c091703dba6a0c8df8541a6753360)] -> xpath: //a[@data-toggle='dropdown']//child::i[@data-original-title='Actions']]
+Session ID: bb5c091703dba6a0c8df8541a6753360
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at utilities.PageUtility.clickOnElement(PageUtility.java:12)
+	at pages.ClientMoreInfoPage.clickOnExportToExcelFileAndDownloadIt(ClientMoreInfoPage.java:85)
+	at com.obsqura.ServiceApp.ClientMoreInfoPageTest.checkClickOnExportToExcelFileAndDownloadIt(ClientMoreInfoPageTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkClickOnExportToExcelFileAndDownloadIt -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1]" name="browserQuit" is-config="true" duration-ms="1024" started-at="2023-01-24T20:34:07Z" finished-at="2023-01-24T20:34:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkClickOnExportToExcelFileAndDownloadIt status=FAILURE method=ClientMoreInfoPageTest.checkClickOnExportToExcelFileAndDownloadIt()[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1]" name="initBrowser" is-config="true" duration-ms="46" started-at="2023-01-24T20:34:08Z" finished-at="2023-01-24T20:34:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1]" name="initializeBrowser" is-config="true" duration-ms="7359" started-at="2023-01-24T20:34:08Z" finished-at="2023-01-24T20:34:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyClickOnViewClientInNewWindowAndModifyName()[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1]" name="verifyClickOnViewClientInNewWindowAndModifyName" duration-ms="6634" started-at="2023-01-24T20:34:15Z" finished-at="2023-01-24T20:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnViewClientInNewWindowAndModifyName -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1]" name="browserQuit" is-config="true" duration-ms="960" started-at="2023-01-24T20:34:22Z" finished-at="2023-01-24T20:34:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickOnViewClientInNewWindowAndModifyName status=SUCCESS method=ClientMoreInfoPageTest.verifyClickOnViewClientInNewWindowAndModifyName()[pri:0, instance:com.obsqura.ServiceApp.ClientMoreInfoPageTest@501edcf1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.ServiceApp.ClientMoreInfoPageTest -->
+      <class name="com.obsqura.ServiceApp.DropdownUserMenuTest">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.ServiceApp.DropdownUserMenuTest@78b729e6]" name="initBrowser" is-config="true" duration-ms="15" started-at="2023-01-24T20:34:23Z" finished-at="2023-01-24T20:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.ServiceApp.DropdownUserMenuTest@78b729e6]" name="initializeBrowser" is-config="true" duration-ms="7176" started-at="2023-01-24T20:34:23Z" finished-at="2023-01-24T20:34:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyUserSignOut()[pri:0, instance:com.obsqura.ServiceApp.DropdownUserMenuTest@78b729e6]" name="verifyUserSignOut" duration-ms="4835" started-at="2023-01-24T20:34:30Z" finished-at="2023-01-24T20:34:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserSignOut -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.ServiceApp.DropdownUserMenuTest@78b729e6]" name="browserQuit" is-config="true" duration-ms="986" started-at="2023-01-24T20:34:35Z" finished-at="2023-01-24T20:34:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserSignOut status=SUCCESS method=DropdownUserMenuTest.verifyUserSignOut()[pri:0, instance:com.obsqura.ServiceApp.DropdownUserMenuTest@78b729e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.ServiceApp.DropdownUserMenuTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

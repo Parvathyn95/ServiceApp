@@ -94,13 +94,13 @@ public class ReparationWindowPage {
 	@FindBy(xpath="//a[@href='https://qalegend.com/mobile_service/panel/reparation']")
 	private WebElement moreInfoButton;
 	
-	@FindBy(xpath="//button[@class='btn btn-info dropdown-toggle']")
+	@FindBy(xpath="//td[@style='vertical-align: inherit;']//button[@data-toggle='dropdown']")
 	private WebElement actionsDropdownButton;
 	
 	@FindBy(xpath="//a[@href='#view_reparation']")
 	private WebElement viewReparationOption;
 
-	@FindBy(xpath="//span[@class='bg-red']")
+	@FindBy(xpath="//li[@class='time-label']//child::span[@class='bg-red']")
 	private WebElement statusTimeline;
 	
 	@FindBy(xpath="//a[text()=' Print Barcode']")
@@ -118,8 +118,8 @@ public class ReparationWindowPage {
 	@FindBy(xpath="//a[@href='#CompletedRepairs']")
 	private WebElement completedRepairsField;
 	
-	@FindBy(xpath="(//button[@data-toggle='dropdown'])[2]")
-	private WebElement actionDropdown;
+/*	@FindBy(xpath="(//button[@data-toggle='dropdown'])[2]")
+	private WebElement actionDropdown;*/
 	
 	@FindBy(xpath="(//a[@data-target='#myModal'])[4]")
 	private WebElement addPayment;
@@ -136,9 +136,10 @@ public class ReparationWindowPage {
 	@FindBy(xpath="//table[@id='dynamic-table-completed']//tbody//child::tr[2]//td[15]")
 	private WebElement paymentTableEntry;
 	
+	By headerElements = By.xpath("//table[@id='bcTable']//child::th");
 	
-	public void enterSomeReparationDetailsAndAddReparation() throws IOException {
-		String imei="7YE5TR",category="Screen Scratch",addItem="Mobilecase",defect="Screen break",warrantyCardNumber="B6R4W32P0",comment="Cannot be fixed without adhesive tape";
+	
+	public void enterSomeReparationDetailsAndAddReparation(String imei,String category, String addItem,String defect,String warrantyCardNumber,String comment) throws IOException {
 		String expectedValidationMessage, actualValidationMessage;
 		PageUtility.clickOnElement(moreItemsButton);
 		Assert.assertFalse(addReparationButton.isSelected(), "Add Client Button is already selected out of scope");
@@ -173,8 +174,7 @@ public class ReparationWindowPage {
 		expectedSignRepairButtonColor=ExcelUtility.getValuesFromExcel(4,3,constants.Constants.TESTDATAFILE,"AddReparationWindowPage");
 		Assert.assertEquals(expectedSignRepairButtonColor, actualSignRepairButtonColor,"Actual and expected color of sign repair button are not the same");
 	}	
-	public void enterMandatoryDetailsAddReparationReportGenerated() throws IOException {
-		String imei="2WR6J89",manufacturer="Oppo Reno",defect="Screen break",model="14 PLUS PRO",warrantyCardNumber="B6R4W32P0",serviceCharges="25";
+	public void enterMandatoryDetailsAddReparationReportGenerated(String imei,String manufacturer, String defect,String model,String warrantyCardNumber,String serviceCharges) throws IOException {
 		String actualTitle, expectedTitle;
 		PageUtility.clickOnElement(moreItemsButton);
 		Assert.assertFalse(addReparationButton.isSelected(), "Add Client Button is already selected out of scope");
@@ -190,7 +190,8 @@ public class ReparationWindowPage {
 		PageUtility.enterText(defectField, defect);
 		PageUtility.enterText(warrantyCardNumberField, warrantyCardNumber);
 		PageUtility.enterText(serviceChargesField, serviceCharges);
-		PageUtility.clickOnElement(addReparationSaveButton);String MainWindow=driver.getWindowHandle();
+		PageUtility.clickOnElement(addReparationSaveButton);
+		String MainWindow=driver.getWindowHandle();
 		Set<String> s1=driver.getWindowHandles();
 		Iterator<String> i1=s1.iterator();
 		while(i1.hasNext())			
@@ -208,8 +209,10 @@ public class ReparationWindowPage {
 		String actualstatusTimelineColor,expectedstatusTimelineColor;
 		PageUtility.clickOnElement(moreInfoButton);
 		Assert.assertFalse(actionsDropdownButton.isSelected(), "Actions dropdown is already selected out of scope");
+		WaitUtility.waitForVisibilityOfWebelement(driver, actionsDropdownButton);
 		PageUtility.clickOnElement(actionsDropdownButton);
 		PageUtility.clickOnElement(viewReparationOption);
+		WaitUtility.waitForVisibilityOfWebelement(driver, viewReparationOption);
 		actualstatusTimelineColor=statusTimeline.getCssValue("background-color");
 		expectedstatusTimelineColor=ExcelUtility.getValuesFromExcel(1,0,constants.Constants.TESTDATAFILE,"AddReparationMoreInfoPage");
 		Assert.assertEquals(expectedstatusTimelineColor, actualstatusTimelineColor,"Actual and expected color of status timeline are not the same");
@@ -218,10 +221,11 @@ public class ReparationWindowPage {
 		String actualHeader,expectedHeader;
 		PageUtility.clickOnElement(moreInfoButton);
 		Assert.assertFalse(actionsDropdownButton.isSelected(), "Actions dropdown is already selected out of scope");
+		WaitUtility.waitForVisibilityOfWebelement(driver, actionsDropdownButton);
 		PageUtility.clickOnElement(actionsDropdownButton);
 		PageUtility.clickOnElement(printBarcodeOption);
 		expectedHeader=ExcelUtility.getValuesFromExcel(1,1,constants.Constants.TESTDATAFILE,"AddReparationMoreInfoPage");
-		List  <WebElement> tableHeader= table.findElements(By.xpath("//table[@id='bcTable']//child::th"));
+		List  <WebElement> tableHeader= table.findElements(headerElements);
 		for(WebElement header : tableHeader) {
 			if(header.getText().equals(expectedHeader)) {
 				actualHeader = header.getText();
@@ -233,8 +237,9 @@ public class ReparationWindowPage {
 	public void clickOnMoreInfoAndExportPdfFile() throws IOException, InterruptedException {
 		String actualstatusTimelineColor,expectedstatusTimelineColor;
 		PageUtility.clickOnElement(moreInfoButton);
+		String location=ExcelUtility.getValuesFromExcel(1,2,constants.Constants.TESTDATAFILE,"AddReparationMoreInfoPage");
 		String sourceLocation = exportToPdfFile.getAttribute("href");
-		String wget_command = "cmd /c C:\\Wget\\wget.exe -P C:\\abc --no-check-certificate " + sourceLocation;
+		String wget_command = location + sourceLocation;
 		try {
 	        Process exec = Runtime.getRuntime().exec(wget_command);
 	        int exitVal = exec.waitFor();
@@ -243,20 +248,6 @@ public class ReparationWindowPage {
 	        System.out.println(ex.toString());
 	        }
 		}
-	/*public void completedOrdersAddPaymentsinNewWindow() throws IOException {
-		String actualPaymentTableEntry,expectedPaymentTableEntry;
-		PageUtility.clickOnElement(moreInfoButton);
-		Assert.assertFalse(completedRepairsField.isSelected(), "Actions dropdown is already selected out of scope");
-		PageUtility.clickOnElement(completedRepairsField);
-		PageUtility.clickOnElement(actionDropdown);
-		PageUtility.clickOnElement(addPayment);
-		PageUtility.enterText(amountField, "1500");
-		PageUtility.selectDropdownbyText(selectPayingBy,"Cash");
-		PageUtility.clickOnElement(addPaymentButton);
-		actualPaymentTableEntry=paymentTableEntry.getText();
-		expectedPaymentTableEntry=ExcelUtility.getValuesFromExcel(1,2,constants.Constants.TESTDATAFILE,"AddReparationMoreInfoPage");
-		Assert.assertEquals(expectedPaymentTableEntry, actualPaymentTableEntry, "Expected and actual payment table entry are not equal");
-	}*/
 		
 	}
 	

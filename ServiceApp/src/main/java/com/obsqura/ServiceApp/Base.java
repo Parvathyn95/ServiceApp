@@ -65,7 +65,7 @@ public class Base {
 		driver.get(prop.getProperty("url"));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));   
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));   
 	}
 		@AfterMethod
 		public void browserQuit(ITestResult iTestResult) throws IOException

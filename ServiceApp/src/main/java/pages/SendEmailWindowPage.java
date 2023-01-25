@@ -40,7 +40,7 @@ import utilities.ParameterUtility;
 		@FindBy(name="email_to[]")
 		private WebElement multipleNameField;
 		
-		@FindBy(xpath="//input[@name='subject']")
+		@FindBy(xpath="(//input[@placeholder='Subject'])[2]")
 		private WebElement subjectField;
 		
 		@FindBy(xpath="//textarea[@id='sms_body']")
@@ -52,16 +52,12 @@ import utilities.ParameterUtility;
 		@FindBy(xpath="//div[@class='toast-message']")
 		private WebElement toastTitleAlertBox;
 		
-		
+		@FindBy(xpath="//div[@id='sendEmailModal']//following::h5[@id='exampleModalLabel']")
+		private WebElement 	exampleModalLabel;
 		
 		public void selectMultipleNamesSubjectNoMessageAndSend() throws IOException {
-			String userName, password,message="Simple Selfie Issue To be rectified",actualToastTitleAlert,expectedToastTitleAlert;
-			userName = ExcelUtility.getValuesFromExcel(1,1,constants.Constants.TESTDATAFILE,"Login Page");
-			password = ExcelUtility.getValuesFromExcel(1,2,constants.Constants.TESTDATAFILE,"Login Page");
-			ParameterUtility.sendKeyValue(driver, userNameField, userName);
-			ParameterUtility.sendKeyValue(driver, passwordField, password);
-			PageUtility.clickOnElement(rememberMeCheckBox);
-			PageUtility.clickOnElement(loginButton);
+			String userName, password,message,actualTitle,expectedTitle;
+			message=ExcelUtility.getValuesFromExcel(1,1,constants.Constants.TESTDATAFILE,"SendEmailWindowPage");
 			PageUtility.clickOnElement(moreItemsButton);
 			Assert.assertFalse(sendEmailIcon.isSelected(), "Send SMS Icon is already selected");
 			PageUtility.clickOnElement(sendEmailIcon);
@@ -72,9 +68,9 @@ import utilities.ParameterUtility;
 			PageUtility.clickOnElement(subjectField);
 			PageUtility.enterText(subjectField, "Mobile repair");
 			PageUtility.clickOnElement(sendEmailSaveButton);
-			actualToastTitleAlert=toastTitleAlertBox.getText();
-			expectedToastTitleAlert=ExcelUtility.getValuesFromExcel(1,0,constants.Constants.TESTDATAFILE,"SendEmailWindowPage");
-			Assert.assertEquals(expectedToastTitleAlert, actualToastTitleAlert,"Actual and expected toast alert are not the same");
+			actualTitle=exampleModalLabel.getText();
+			expectedTitle=ExcelUtility.getValuesFromExcel(1,0,constants.Constants.TESTDATAFILE,"SendEmailWindowPage");
+			Assert.assertEquals(expectedTitle, actualTitle,"Actual and expected title are not the same");
 		}
 }
 

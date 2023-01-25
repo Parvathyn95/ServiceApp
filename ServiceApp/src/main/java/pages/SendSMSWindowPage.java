@@ -34,19 +34,23 @@ public class SendSMSWindowPage {
 	@FindBy(xpath="//button[@form='SendSMS']")
 	private WebElement sendSMSSaveButton;
 	
-	@FindBy(xpath="//div[@class='toast-message']")
+	@FindBy(xpath="//div[@class='toast toast-warning'//child::div[@class='toast-message']")
 	private WebElement toastTitleAlertBox;
 	
+	@FindBy(xpath="//h5[@id='exampleModalLabel']")
+	private WebElement 	exampleModalLabel;
+	
 	public void selectNameEnterMessageAndSend() throws IOException {
-		String message="Simple Selfie Issue To be rectified",actualToastTitleAlert,expectedToastTitleAlert;
+		String message,actualTitle,expectedTitle;
+        message=ExcelUtility.getValuesFromExcel(1,1,constants.Constants.TESTDATAFILE,"SendSMSWindowPage");
 		PageUtility.clickOnElement(moreItemsButton);
 		Assert.assertFalse(sendSMSIcon.isSelected(), "Send SMS Icon is already selected out of scope");
 		PageUtility.clickOnElement(sendSMSIcon);
 		PageUtility.selectDropdownbyText(nameDropdown, "Lekshmi");
 		PageUtility.enterText(messageField, message);
 		PageUtility.clickOnElement(sendSMSSaveButton);
-		actualToastTitleAlert=toastTitleAlertBox.getText();
-		expectedToastTitleAlert=ExcelUtility.getValuesFromExcel(1,0,constants.Constants.TESTDATAFILE,"SendSMSWindowPage");
-		Assert.assertEquals(expectedToastTitleAlert, actualToastTitleAlert,"Actual and expected toast alert are not the same");
+		actualTitle=exampleModalLabel.getText();
+		expectedTitle=ExcelUtility.getValuesFromExcel(1,0,constants.Constants.TESTDATAFILE,"SendSMSWindowPage");
+		Assert.assertEquals(expectedTitle, actualTitle,"Actual and expected titles are not the same");
 	}	
 }

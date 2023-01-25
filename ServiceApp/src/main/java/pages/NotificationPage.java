@@ -13,6 +13,7 @@ import org.testng.Assert;
 
 import utilities.ExcelUtility;
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class NotificationPage {
 	public WebDriver driver;
@@ -36,6 +37,8 @@ public class NotificationPage {
 	@FindBy(xpath="//div[@id='content-wrapper']//h1")
 	private WebElement headerTitle;
 	
+	By headerElements = By.xpath("//table[@id='dynamic-table']//child::th");
+	
 	public void clickNotificationAndNavigateToQuantityAlerts() throws IOException {
 		String actualHeader,expectedHeader;
 		Assert.assertFalse(notificationIcon.isSelected(), "Notification Icon is already selected out of scope");
@@ -43,7 +46,8 @@ public class NotificationPage {
 		Assert.assertFalse(notificationDropdown.isSelected(), "Notification Dropdown option is already selected out of scope");
 		PageUtility.clickOnElement(notificationDropdown);
 		expectedHeader=ExcelUtility.getValuesFromExcel(1,0,constants.Constants.TESTDATAFILE,"NotificationPage");
-		List  <WebElement> tableHeader= table.findElements(By.xpath("//table[@id='dynamic-table']//child::th"));
+		WaitUtility.fluentVisibilityOfAllElements(driver, headerElements);
+		List  <WebElement> tableHeader= table.findElements(headerElements);
 		for(WebElement header : tableHeader) {
 			if(header.getText().equals(expectedHeader)) {
 				actualHeader = header.getText();
@@ -59,7 +63,9 @@ public class NotificationPage {
 		Assert.assertFalse(notificationDropdown.isSelected(), "Notification Dropdown option is already selected out of scope");
 		PageUtility.clickOnElement(notificationDropdown);
 		actualTitle=headerTitle.getText();
+		WaitUtility.waitForTitleContains(driver, actualTitle);
 		expectedTitle=ExcelUtility.getValuesFromExcel(1,1,constants.Constants.TESTDATAFILE,"NotificationPage");
+		Assert.assertEquals(actualTitle, expectedTitle,"Expected and actual title are not equal");
 	}	
 	
 }

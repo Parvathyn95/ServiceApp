@@ -1,24 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="addItem" value="Mobilecase"/>
+  <parameter name="defect" value="Screen break"/>
   <parameter name="subject" value="Mobile Screenshot"/>
   <parameter name="browser" value="chrome"/>
+  <parameter name="imei" value="7YE5TR"/>
   <parameter name="mailid" value="ravisankar_gatgmailcom"/>
+  <parameter name="comment" value="Cannot be fixed without adhesive tape"/>
+  <parameter name="warrantyCardNumber" value="B6R4W32P0"/>
   <parameter name="userName" value="admin@admin.com"/>
   <parameter name="message" value="Screenshot HD capture and quality"/>
+  <parameter name="category" value="Screen Scratch"/>
   <listeners>
     <listener class-name="com.obsqura.ServiceApp.Listeners"/>
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.obsqura.ServiceApp.SendEmailWindowPageTest">
+      <class name="com.obsqura.ServiceApp.ClientWindowPageTest">
         <methods>
+          <include name="verifyEnterClientDetailsAndAddClient" invocation-numbers="0"/>
           <include name="initializeBrowser"/>
           <include name="initBrowser"/>
-          <include name="verifySelectNameEnterMessageAndSend"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- com.obsqura.ServiceApp.SendEmailWindowPageTest -->
+      </class> <!-- com.obsqura.ServiceApp.ClientWindowPageTest -->
+      <class name="com.obsqura.ServiceApp.InventoryPageInfoTest">
+        <methods>
+          <include name="checkAndClickOnInventoryPdtTableElementAndInspectButtonColors"/>
+          <include name="initializeBrowser"/>
+          <include name="initBrowser"/>
+          <include name="checkColorOfVariousButtonsInPrintBarcodeOrLabel"/>
+          <include name="verifyAndClickOnPrintBarcodeOrLabelAndGetAlertDescription"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- com.obsqura.ServiceApp.InventoryPageInfoTest -->
+      <class name="com.obsqura.ServiceApp.ReparationWindowPageTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="verifyAndEnterMandatoryDetailsAddReparationReportGenerated" invocation-numbers="0"/>
+          <include name="initBrowser"/>
+          <include name="browserQuit"/>
+          <include name="verifyAndEnterSomeReparationDetailseAndAddReparation" invocation-numbers="0"/>
+          <include name="verifyClickOnViewReparationInNewWindow"/>
+        </methods>
+      </class> <!-- com.obsqura.ServiceApp.ReparationWindowPageTest -->
+      <class name="com.obsqura.ServiceApp.HomePageTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="verifyAndClickOnDateCalenderEventAndDeleteIt"/>
+          <include name="initBrowser"/>
+          <include name="verifyAndClickOnDateCalenderAddEventIfAddedOrNot"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- com.obsqura.ServiceApp.HomePageTest -->
+      <class name="com.obsqura.ServiceApp.ClientMoreInfoPageTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="checkClickOnExportToExcelFileAndDownloadIt"/>
+          <include name="initBrowser"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- com.obsqura.ServiceApp.ClientMoreInfoPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

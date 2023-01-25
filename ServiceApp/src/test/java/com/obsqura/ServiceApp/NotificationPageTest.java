@@ -10,14 +10,14 @@ import pages.NotificationPage;
 public class NotificationPageTest extends Base {
 	LoginPage loginPageObj;
 	NotificationPage notificationPageObj;
-	@Test
+	@Test (groups = {"Regression"})
 	public void checkClickNotificationAndNavigateToQuantityAlerts() throws IOException {
 		loginPageObj = new LoginPage(driver);
 		loginPageObj.enterUsernameAndPassword();
 		notificationPageObj = new NotificationPage(driver);
 		notificationPageObj.clickNotificationAndNavigateToQuantityAlerts();
 	}
-	@Test
+	@Test (groups = {"Smoke"})
 	public void checkClickNotificationAndQuantityAlertTitle() throws IOException {
 		loginPageObj = new LoginPage(driver);
 		loginPageObj.enterUsernameAndPassword();

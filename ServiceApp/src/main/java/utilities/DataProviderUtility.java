@@ -21,5 +21,18 @@ public class DataProviderUtility {
 			{"vimal_h@reddifmail.com","Mobile Screenshot Sharpening"}
 		};
 	}
+	@DataProvider(name="formData3")
+	public static Object[][] getDataFromFormData3(){
+		return new Object[][] {
+			{"Lewbricks Solutions","Mumbai","Mayank Vihar, Dombivilli East, Bombay","Andheri","047239","6734209836","nakul89@rediffmail.com"
+				,"CG87OP54","56YU98","Samsung yfold phone screen display"}
+		};
+	}
+	@DataProvider(name="formData4")
+	public static Object[][] getDataFromFormData4(){
+		return new Object[][] {
+			{"2WR6J89","Oppo Reno","Screen break","14 PLUS PRO","B6R4W32P0","25"}
+		};
+	}
 
 }
